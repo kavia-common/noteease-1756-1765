@@ -1,75 +1,61 @@
-# Nuxt Minimal Starter
+# NoteEase – Nuxt Notes Frontend
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a modern, minimalistic notes management web app built using Nuxt.js 3.
 
-## Setup
+## Features
 
-Make sure to install dependencies:
+- Add, edit, delete, and view notes seamlessly
+- Search and filter notes live in the sidebar
+- Responsive two-panel layout:
+  - **Left:** Sidebar with searchable notes list and add/delete actions
+  - **Right:** Note details and editing
+- Persistent storage (localStorage for demo)
+- Elegant light theme using:
+  - **Accent:** `#FBBF24`
+  - **Primary:** `#1E90FF`
+  - **Secondary:** `#374151`
+- Keyboard and mouse friendly
+
+## Usage
+
+### Install dependencies
 
 ```bash
 # npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+### Start for development
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+Visit [http://localhost:3000](http://localhost:3000).
 
-Build the application for production:
+### Build for production
 
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
+### Preview production build
 
 ```bash
-# npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Project structure
+
+- **`/components`**: UI components (Sidebar, Note details, Logo)
+- **`/stores`**: State management for notes
+- **`/pages`**: Nuxt routes
+- **`/app.vue`**: Layout definition
+
+## Customization
+
+You can change the theme colors in the CSS in `app.vue`, `NotesSidebar.vue`, and `NoteDetail.vue`.
+
+## License
+
+MIT
